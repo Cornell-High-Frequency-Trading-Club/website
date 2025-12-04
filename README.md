@@ -31,8 +31,17 @@ That's it! No build step needed.
 ├── about.html      # About page
 ├── members.html    # Members page
 ├── styles.css      # All styling
+├── script.js       # Interactive features (mobile menu, animations)
 └── README.md       # This file
 ```
+
+## Features
+
+The `script.js` file adds:
+- **Mobile Navigation Menu** - Hamburger menu for mobile devices
+- **Active Page Highlighting** - Current page is highlighted in navigation
+- **Smooth Scrolling** - Smooth scroll behavior for anchor links
+- **Fade-in Animations** - Cards fade in as you scroll down
 
 ## Customization
 
@@ -40,9 +49,10 @@ That's it! No build step needed.
 - Modify club information in `index.html` and `about.html`
 - Adjust styling in `styles.css`
 - Update colors: The Cornell red color is `#b31b1b` - change it in `styles.css` if needed
+- Customize interactions in `script.js`
 
 ## Technologies
 
 - HTML5
 - CSS3
-- No JavaScript dependencies
+- Vanilla JavaScript (no dependencies)
