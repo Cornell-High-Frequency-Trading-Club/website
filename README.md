@@ -1,58 +1,23 @@
-# Cornell High Frequency Trading Club Website
+# Cornell High Frequency Trading Club website
 
-A simple, modern website for the Cornell High Frequency Trading Club (Cornell HFTC), built with HTML, CSS, and ready for GitHub Pages deployment.
+The current website is plain HTML in `dist/`. No dependencies or build step are required.
 
-## Features
+Live site: https://cornell-high-frequency-trading-club.github.io/website/
 
-- **Home Page** (`index.html`) - Welcome section with club overview and key activities
-- **About Us** (`about.html`) - Detailed information about the club's mission and focus areas
-- **Members** (`members.html`) - Showcase of club members and their roles
-- **Modern UI** - Clean, professional design with responsive layout
-- **No Build Step** - Simple HTML/CSS that works directly on GitHub Pages
+## Edit and preview
 
-## Getting Started
+Edit files in `dist/`. Run `python3 -m http.server 8000 --directory dist` and open http://localhost:8000.
 
-Simply open `index.html` in your web browser to view the site locally. No build process or dependencies required!
+## Deployment
 
-## GitHub Pages Deployment
+GitHub Pages uses GitHub Actions. Every push to `main` publishes only `dist/` using `.github/workflows/deploy.yml`. The workflow can also be run manually from the Actions tab.
 
-1. Push all files to your GitHub repository
-2. Go to your repository Settings → Pages
-3. Select the branch (usually `main`) and folder (root `/`)
-4. Your site will be live at `https://yourusername.github.io/repository-name/`
+The older root-level website files are retained for reference and are not deployed.
 
-That's it! No build step needed.
+## Custom domain
 
-## Project Structure
+A domain is optional. When one is available, configure it under Settings → Pages → Custom domain, add the DNS records GitHub requests, and enable HTTPS once the certificate is ready.
 
-```
-.
-├── index.html      # Home page
-├── about.html      # About page
-├── members.html    # Members page
-├── styles.css      # All styling
-├── script.js       # Interactive features (mobile menu, animations)
-└── README.md       # This file
-```
+## Current functionality
 
-## Features
-
-The `script.js` file adds:
-- **Mobile Navigation Menu** - Hamburger menu for mobile devices
-- **Active Page Highlighting** - Current page is highlighted in navigation
-- **Smooth Scrolling** - Smooth scroll behavior for anchor links
-- **Fade-in Animations** - Cards fade in as you scroll down
-
-## Customization
-
-- Update member information in `members.html`
-- Modify club information in `index.html` and `about.html`
-- Adjust styling in `styles.css`
-- Update colors: The Cornell red color is `#b31b1b` - change it in `styles.css` if needed
-- Customize interactions in `script.js`
-
-## Technologies
-
-- HTML5
-- CSS3
-- Vanilla JavaScript (no dependencies)
+The password field is decorative and does not restrict access. The interest form is a coming-soon page.
